@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>js-male-fmale-age-work</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+	</head>
+	<body>
+		<h4>6. Without array
+ Ask user to enter age, sex ( M or F ),and then using following rules print their place of service. if employee is female, then she will work only in urban areas. if employee is a male and age is in between 20 to 40 then he may work in anywhere if employee is male and age is in between 40 to 60 then he will work in urban areas only. And any other input of age should print "ERROR"</h4>
+	<script>
+		var age= prompt("enter your age");
+		var sex= prompt("enter male or fmale");
+		
+		
+		if(sex === "fmale"){
+			document.write("You will work in urban areas","<br>")
+		}
+		else if(sex==="male"){
+			 if(age>=20 && age<=40){
+			document.write("You may work in any area","<br>")
+			}
+			else if (age>40 && age<=60){
+			document.write("You will work in urban areas only","<br>")	
+			}
+			else{
+			document.write("ERROR","<br>");
+			}
+		}
+		else{
+		document.write("ERROR","<br>");
+		}
+		
+	</script>
+	</body>
